@@ -1,11 +1,11 @@
 package models;
 
 public class Student {
-    String fullName;
-    String universityId;
-    int currentCourseNumber;
-    float avgExamScore;
-    boolean isRusCitizen;
+    private String fullName;
+    private String universityId;
+    private int currentCourseNumber;
+    private float avgExamScore;
+    private boolean isRusCitizen;
 
     public Student(String fullName, String universityId, int currentCourseNumber, float avgExamScore, boolean isRusCitizen) {
         this.fullName = fullName;
@@ -15,9 +15,7 @@ public class Student {
         this.isRusCitizen = isRusCitizen;
     }
 
-    public Student() {
-
-    }
+    public Student() {}
 
     public String getFullName() {
         return fullName;

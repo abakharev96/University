@@ -3,12 +3,12 @@ package models;
 import profiles.StudyProfile;
 
 public class University {
-    String id;
-    String fullName;
-    String shortName;
-    int yearOfFoundation;
-    StudyProfile mainProfile;
-    String location;
+    private String id;
+    private String fullName;
+    private String shortName;
+    private int yearOfFoundation;
+    private StudyProfile mainProfile;
+    private String location;
 
     public University(String id, String fullName, String shortName, int yearOfFoundation, StudyProfile mainProfile, String location) {
         this.id = id;

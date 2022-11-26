@@ -12,8 +12,8 @@ import static org.example.ReadingXLSX.students;
 import static org.example.ReadingXLSX.universities;
 
 public class Main {
-    static String userChoice;
-    static Scanner scan = new Scanner(System.in);
+    private static String userChoice;
+    private static Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args) {
         System.out.println("Instruction.\n" +
