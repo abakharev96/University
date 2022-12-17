@@ -8,6 +8,7 @@ import comparator.enums.UniversityComparatorsEnum;
 import models.Statistics;
 import models.Student;
 import models.University;
+import profiles.StudyProfile;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -29,9 +30,8 @@ public class Main {
         StudentComparator studentComparator = ComparatorUtility.studentComparator(StudentComparatorsEnum.STUDENT_AVG_EXAM_SCORE);
         students.sort(studentComparator);
 
-
-        ArrayList<Statistics> check = new ArrayList<>();
-        WriterXLSX.writeToExcel(check,"src/main/resources/universityResults.xlsx");
+        ArrayList<Statistics> statisticsArrayList = StatisticsUtil.calculateStatistics(students, universities);
+        WriterXLSX.writeToExcel(statisticsArrayList,"src/main/resources/universityResults.xlsx");
 
         //part for JSON
         /*

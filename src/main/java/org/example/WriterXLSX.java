@@ -82,4 +82,14 @@ public class WriterXLSX {
             universityName.setCellValue(statistic.getUniversityName());
         }
     }
+
+    private static void addJsonToExtraTabs(Workbook workbook){
+        int rowNumber = 0;
+        Sheet jsonByObject = workbook.createSheet("Json by Objects");
+        Sheet jsonAccumulated = workbook.createSheet("Json all Objects");
+        Row rowAccumulated = jsonAccumulated.createRow(rowNumber);
+        Row rowByObject = jsonByObject.createRow(rowNumber);
+
+
+    }
 }

@@ -9,9 +9,9 @@ public class Statistics {
     private int universitiesCountByProfile;
     private float avgExamScoreByUniversities;
     private float avgExamScoreByProfile;
-    private int universityName;
+    private String universityName;
 
-    public Statistics(StudyProfile mainProfile, float avgExamScore, int studentsCountByProfile, int universitiesCountByProfile, float avgExamScoreByUniversities, float avgExamScoreByProfile, int universityName) {
+    public Statistics(StudyProfile mainProfile, float avgExamScore, int studentsCountByProfile, int universitiesCountByProfile, float avgExamScoreByUniversities, float avgExamScoreByProfile, String universityName) {
         this.mainProfile = mainProfile;
         this.avgExamScore = avgExamScore;
         this.studentsCountByProfile = studentsCountByProfile;
@@ -19,6 +19,10 @@ public class Statistics {
         this.avgExamScoreByUniversities = avgExamScoreByUniversities;
         this.avgExamScoreByProfile = avgExamScoreByProfile;
         this.universityName = universityName;
+    }
+
+    public Statistics() {
+
     }
 
     public StudyProfile getMainProfile() {
@@ -53,11 +57,11 @@ public class Statistics {
         this.universitiesCountByProfile = universitiesCountByProfile;
     }
 
-    public int getUniversityName() {
+    public String getUniversityName() {
         return universityName;
     }
 
-    public void setUniversityName(int universityName) {
+    public void setUniversityName(String universityName) {
         this.universityName = universityName;
     }
 
