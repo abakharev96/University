@@ -36,7 +36,6 @@ public class Main {
         //part for JSON
         /*
         ReadingXLSX.readXlsx("src/main/resources/universityInfo.xlsx");
-        StudentComparator studentComparator = ComparatorUtility.studentComparator(StudentComparatorsEnum.STUDENT_AVG_EXAM_SCORE);
         students.sort(studentComparator);
         String studentSerializedJson = JsonUtil.studentListSerialize(students);
         System.out.println(studentSerializedJson);
@@ -48,7 +47,6 @@ public class Main {
             Student studentDeserialize = JsonUtil.studentDeserialize(studentSerialized);
             System.out.println(studentDeserialize);
         });
-
         UniversityComparator universityComparator = ComparatorUtility.universityComparator(UniversityComparatorsEnum.UNIVERSITY_YEAR_OF_FOUNDATION);
         universities.sort(universityComparator);
         String universitySerializedJson = JsonUtil.universityListSerialize(universities);
@@ -62,7 +60,6 @@ public class Main {
             System.out.println(universityDeserialized);
         });
         */
-
         //MainMenu();
     }
 

@@ -1,11 +1,22 @@
 package org.example;
 
+import comparator.ComparatorUtility;
+import comparator.StudentComparator;
+import comparator.UniversityComparator;
+import comparator.enums.StudentComparatorsEnum;
+import comparator.enums.UniversityComparatorsEnum;
 import models.Statistics;
+import models.Student;
+import models.University;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
+
+import static org.example.ReadingXLSX.students;
+import static org.example.ReadingXLSX.universities;
 
 public class WriterXLSX {
     public static void writeToExcel(ArrayList<Statistics> statistics, String URL){
@@ -16,6 +27,7 @@ public class WriterXLSX {
         addHeaderToStatisticExcel(workbook, statisticSheet, rowNumber);
         addFontToHeaderStatisticExcel(workbook);
         fillData(statisticSheet, statistics, rowNumber);
+        //addJsonToExtraTabs(workbook);
 
         try (FileOutputStream fos = new FileOutputStream(URL)) {
             workbook.write(fos);
@@ -83,13 +95,4 @@ public class WriterXLSX {
         }
     }
 
-    private static void addJsonToExtraTabs(Workbook workbook){
-        int rowNumber = 0;
-        Sheet jsonByObject = workbook.createSheet("Json by Objects");
-        Sheet jsonAccumulated = workbook.createSheet("Json all Objects");
-        Row rowAccumulated = jsonAccumulated.createRow(rowNumber);
-        Row rowByObject = jsonByObject.createRow(rowNumber);
-
-
-    }
 }

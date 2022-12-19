@@ -29,6 +29,11 @@
             <artifactId>org.wso2.carbon.utils</artifactId>
             <version>4.8.0-m2</version>
         </dependency>
+        <dependency>
+            <groupId>com.github.davidmoten</groupId>
+            <artifactId>word-wrap</artifactId>
+            <version>0.1.9</version>
+        </dependency>
 
     </dependencies>
 
