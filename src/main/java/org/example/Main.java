@@ -21,10 +21,10 @@ public class Main {
     private static Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args) {
-        System.out.println("Instruction.\n" +
+        /*System.out.println("Instruction.\n" +
                 "You will be prompted to choose between some options of the University base. \n" +
                 "Please, follow the next instructions.");
-        System.out.println("");
+        System.out.println("");*/
 
         ReadingXLSX.readXlsx("src/main/resources/universityInfo.xlsx");
         StudentComparator studentComparator = ComparatorUtility.studentComparator(StudentComparatorsEnum.STUDENT_AVG_EXAM_SCORE);

@@ -31,7 +31,7 @@ public class WriterXLSX {
 
         try (FileOutputStream fos = new FileOutputStream(URL)) {
             workbook.write(fos);
-            System.out.println("The excel file was added successfully");
+            //System.out.println("The excel file was added successfully");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

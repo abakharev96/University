@@ -23,9 +23,9 @@ public class ReadingXLSX {
             XSSFSheet sheetStudents = universityInfo.getSheet("Студенты");
             universityRead(sheetUniver);
             studentRead(sheetStudents);
-            System.out.println("The file was read successfully.");
+            //System.out.println("The file was read successfully.");
         } catch (IOException e) {
-            System.out.println("The file was not read. Check link");
+            //System.out.println("The file was not read. Check link");
             throw new RuntimeException(e);
         }
     }
