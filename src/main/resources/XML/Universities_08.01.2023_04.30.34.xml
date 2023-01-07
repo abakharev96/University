@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Universities xmlns="Universities">
+  <University UniversityID="0005-high">
+    <FullName>Самарский Медицинский Институт</FullName>
+    <ShortName>СМИ</ShortName>
+    <Location>Самара</Location>
+    <MainProfile>medicine</MainProfile>
+    <YearOfFoundation>1936</YearOfFoundation>
+  </University>
+  <University UniversityID="0003-high">
+    <FullName>Московский Государственный Медицинский Университет</FullName>
+    <ShortName>МГМУ</ShortName>
+    <Location>Москва</Location>
+    <MainProfile>medicine</MainProfile>
+    <YearOfFoundation>1960</YearOfFoundation>
+  </University>
+  <University UniversityID="0002-high">
+    <FullName>Московский Придуманный Институт</FullName>
+    <ShortName>МПИ</ShortName>
+    <Location>Москва</Location>
+    <MainProfile>physics</MainProfile>
+    <YearOfFoundation>1987</YearOfFoundation>
+  </University>
+  <University UniversityID="0007-high">
+    <FullName>Казанский Университет Вычислений</FullName>
+    <ShortName>КУВ</ShortName>
+    <Location>Казань</Location>
+    <MainProfile>maths</MainProfile>
+    <YearOfFoundation>1989</YearOfFoundation>
+  </University>
+  <University UniversityID="0001-high">
+    <FullName>Московский Выдуманный Университет</FullName>
+    <ShortName>МВУ</ShortName>
+    <Location>Москва</Location>
+    <MainProfile>physics</MainProfile>
+    <YearOfFoundation>1990</YearOfFoundation>
+  </University>
+  <University UniversityID="0004-high">
+    <FullName>Тамбовский Университет Медицины</FullName>
+    <ShortName>ТУМ</ShortName>
+    <Location>Тамбов</Location>
+    <MainProfile>medicine</MainProfile>
+    <YearOfFoundation>1995</YearOfFoundation>
+  </University>
+  <University UniversityID="0006-high">
+    <FullName>Воронежский Литературно-Переводческий Университет</FullName>
+    <ShortName>ВЛПУ</ShortName>
+    <Location>Воронеж</Location>
+    <MainProfile>linguistics</MainProfile>
+    <YearOfFoundation>2003</YearOfFoundation>
+  </University>
+</Universities>
+

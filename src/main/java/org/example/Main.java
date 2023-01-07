@@ -4,10 +4,10 @@ import comparator.UniversityComparator;
 import comparator.StudentComparator;
 import models.Statistics;
 import output.Json;
+import output.Xml;
+
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.GregorianCalendar;
 import java.util.Scanner;
 import java.util.logging.*;
 import static java.util.logging.Level.INFO;
@@ -34,7 +34,8 @@ public class Main {
             System.err.println("Error in reading logging properties.");
         }
         ReadingXLSX.readXlsx("src/main/resources/universityInfo.xlsx");
-        Json.createJson(students, universities);
+        Json.writeJson(students, universities);
+        Xml.writeXml(students, universities);
 
         ArrayList<Statistics> statisticsArrayList = StatisticsUtil.calculateStatistics(students, universities);
         WriterXLSX.writeToExcel(statisticsArrayList,"src/main/resources/universityResults.xlsx");

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Students xmlns="Students">
+  <Student FullName="Сидоров Е. Г.">
+    <UniversityID>0004-high</UniversityID>
+    <CourseNumber>2</CourseNumber>
+    <AvgExamScore>3.9</AvgExamScore>
+    <RusCitizen>true</RusCitizen>
+  </Student>
+  <Student FullName="Иванов И. А.">
+    <UniversityID>0002-high</UniversityID>
+    <CourseNumber>2</CourseNumber>
+    <AvgExamScore>4.0</AvgExamScore>
+    <RusCitizen>true</RusCitizen>
+  </Student>
+  <Student FullName="Витальев В. А.">
+    <UniversityID>0001-high</UniversityID>
+    <CourseNumber>2</CourseNumber>
+    <AvgExamScore>4.0</AvgExamScore>
+    <RusCitizen>false</RusCitizen>
+  </Student>
+  <Student FullName="Фёдоров А. И.">
+    <UniversityID>0002-high</UniversityID>
+    <CourseNumber>3</CourseNumber>
+    <AvgExamScore>4.2</AvgExamScore>
+    <RusCitizen>true</RusCitizen>
+  </Student>
+  <Student FullName="Магомедов М.М.">
+    <UniversityID>0003-high</UniversityID>
+    <CourseNumber>3</CourseNumber>
+    <AvgExamScore>4.2</AvgExamScore>
+    <RusCitizen>false</RusCitizen>
+  </Student>
+  <Student FullName="Игнатьев М. М.">
+    <UniversityID>0003-high</UniversityID>
+    <CourseNumber>4</CourseNumber>
+    <AvgExamScore>4.3</AvgExamScore>
+    <RusCitizen>true</RusCitizen>
+  </Student>
+  <Student FullName="Козлов М. В.">
+    <UniversityID>0002-high</UniversityID>
+    <CourseNumber>2</CourseNumber>
+    <AvgExamScore>4.6</AvgExamScore>
+    <RusCitizen>true</RusCitizen>
+  </Student>
+  <Student FullName="Васильев В. П.">
+    <UniversityID>0001-high</UniversityID>
+    <CourseNumber>4</CourseNumber>
+    <AvgExamScore>4.7</AvgExamScore>
+    <RusCitizen>true</RusCitizen>
+  </Student>
+  <Student FullName="Соколов В. В.">
+    <UniversityID>0004-high</UniversityID>
+    <CourseNumber>1</CourseNumber>
+    <AvgExamScore>4.8</AvgExamScore>
+    <RusCitizen>true</RusCitizen>
+  </Student>
+  <Student FullName="Иванов А. Г.">
+    <UniversityID>0001-high</UniversityID>
+    <CourseNumber>3</CourseNumber>
+    <AvgExamScore>4.8</AvgExamScore>
+    <RusCitizen>true</RusCitizen>
+  </Student>
+  <Student FullName="Петров П. А.">
+    <UniversityID>0001-high</UniversityID>
+    <CourseNumber>1</CourseNumber>
+    <AvgExamScore>5.0</AvgExamScore>
+    <RusCitizen>true</RusCitizen>
+  </Student>
+  <Student FullName="Алексеев С. В.">
+    <UniversityID>0001-high</UniversityID>
+    <CourseNumber>1</CourseNumber>
+    <AvgExamScore>5.0</AvgExamScore>
+    <RusCitizen>true</RusCitizen>
+  </Student>
+</Students>
+

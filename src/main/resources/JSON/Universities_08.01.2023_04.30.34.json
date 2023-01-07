@@ -1,0 +1,58 @@
+[
+  {
+    "University Id": "0005-high",
+    "University full name": "Самарский Медицинский Институт",
+    "University short name": "СМИ",
+    "University year of foundation": 1936,
+    "University main profile": "medicine",
+    "University location": "Самара"
+  },
+  {
+    "University Id": "0003-high",
+    "University full name": "Московский Государственный Медицинский Университет",
+    "University short name": "МГМУ",
+    "University year of foundation": 1960,
+    "University main profile": "medicine",
+    "University location": "Москва"
+  },
+  {
+    "University Id": "0002-high",
+    "University full name": "Московский Придуманный Институт",
+    "University short name": "МПИ",
+    "University year of foundation": 1987,
+    "University main profile": "physics",
+    "University location": "Москва"
+  },
+  {
+    "University Id": "0007-high",
+    "University full name": "Казанский Университет Вычислений",
+    "University short name": "КУВ",
+    "University year of foundation": 1989,
+    "University main profile": "maths",
+    "University location": "Казань"
+  },
+  {
+    "University Id": "0001-high",
+    "University full name": "Московский Выдуманный Университет",
+    "University short name": "МВУ",
+    "University year of foundation": 1990,
+    "University main profile": "physics",
+    "University location": "Москва"
+  },
+  {
+    "University Id": "0004-high",
+    "University full name": "Тамбовский Университет Медицины",
+    "University short name": "ТУМ",
+    "University year of foundation": 1995,
+    "University main profile": "medicine",
+    "University location": "Тамбов"
+  },
+  {
+    "University Id": "0006-high",
+    "University full name": "Воронежский Литературно-Переводческий Университет",
+    "University short name": "ВЛПУ",
+    "University year of foundation": 2003,
+    "University main profile": "linguistics",
+    "University location": "Воронеж"
+  }
+]

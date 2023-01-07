@@ -1,0 +1,86 @@
+[
+  {
+    "Student name": "Сидоров Е. Г.",
+    "Student university id": "0004-high",
+    "Student current course number": 2,
+    "Student average exam score": 3.9,
+    "Russian residence of student": true
+  },
+  {
+    "Student name": "Иванов И. А.",
+    "Student university id": "0002-high",
+    "Student current course number": 2,
+    "Student average exam score": 4.0,
+    "Russian residence of student": true
+  },
+  {
+    "Student name": "Витальев В. А.",
+    "Student university id": "0001-high",
+    "Student current course number": 2,
+    "Student average exam score": 4.0,
+    "Russian residence of student": false
+  },
+  {
+    "Student name": "Фёдоров А. И.",
+    "Student university id": "0002-high",
+    "Student current course number": 3,
+    "Student average exam score": 4.2,
+    "Russian residence of student": true
+  },
+  {
+    "Student name": "Магомедов М.М.",
+    "Student university id": "0003-high",
+    "Student current course number": 3,
+    "Student average exam score": 4.2,
+    "Russian residence of student": false
+  },
+  {
+    "Student name": "Игнатьев М. М.",
+    "Student university id": "0003-high",
+    "Student current course number": 4,
+    "Student average exam score": 4.3,
+    "Russian residence of student": true
+  },
+  {
+    "Student name": "Козлов М. В.",
+    "Student university id": "0002-high",
+    "Student current course number": 2,
+    "Student average exam score": 4.6,
+    "Russian residence of student": true
+  },
+  {
+    "Student name": "Васильев В. П.",
+    "Student university id": "0001-high",
+    "Student current course number": 4,
+    "Student average exam score": 4.7,
+    "Russian residence of student": true
+  },
+  {
+    "Student name": "Соколов В. В.",
+    "Student university id": "0004-high",
+    "Student current course number": 1,
+    "Student average exam score": 4.8,
+    "Russian residence of student": true
+  },
+  {
+    "Student name": "Иванов А. Г.",
+    "Student university id": "0001-high",
+    "Student current course number": 3,
+    "Student average exam score": 4.8,
+    "Russian residence of student": true
+  },
+  {
+    "Student name": "Петров П. А.",
+    "Student university id": "0001-high",
+    "Student current course number": 1,
+    "Student average exam score": 5.0,
+    "Russian residence of student": true
+  },
+  {
+    "Student name": "Алексеев С. В.",
+    "Student university id": "0001-high",
+    "Student current course number": 1,
+    "Student average exam score": 5.0,
+    "Russian residence of student": true
+  }
+]

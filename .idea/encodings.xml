@@ -3,6 +3,9 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/logfile.txt.0" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/JSON/Students_08.01.2023_04.27.43.json" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/JSON/Students_08.01.2023_04.30.34.json" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/JSON/Universities_08.01.2023_04.30.34.json" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/logfile.txt.0" charset="windows-1251" />
   </component>
 </project>
