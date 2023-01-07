@@ -12,20 +12,26 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class ReadingXLSX {
+    private static final Logger log = Logger.getLogger(ReadingXLSX.class.getName());
     private ReadingXLSX() {}
     static ArrayList<University> universities = new ArrayList<>();
     static ArrayList<Student> students = new ArrayList<>();
     public static void readXlsx(String URL){
         try (FileInputStream file = new FileInputStream(new File(URL)); XSSFWorkbook universityInfo = new XSSFWorkbook(file)) {
+            log.log(Level.ALL, "Trying to read excel file..." );
             XSSFSheet sheetUniver = universityInfo.getSheet("Университеты");
             XSSFSheet sheetStudents = universityInfo.getSheet("Студенты");
             universityRead(sheetUniver);
             studentRead(sheetStudents);
             //System.out.println("The file was read successfully.");
+            log.log(Level.INFO, "Excel file was read successfully");
         } catch (IOException e) {
             //System.out.println("The file was not read. Check link");
+            log.log(Level.SEVERE, "Excel file reading was failed", e);
             throw new RuntimeException(e);
         }
     }
@@ -44,6 +50,7 @@ public class ReadingXLSX {
             university.setLocation(row.getCell(5).getStringCellValue());
             universities.add(university);
         }
+        log.log(Level.ALL, "Universities list was created successfully.");
         return universities;
     }
 
@@ -60,6 +67,7 @@ public class ReadingXLSX {
             student.setRusCitizen(row.getCell(4).getBooleanCellValue());
             students.add(student);
         }
+        log.log(Level.ALL, "Students list was created successfully.");
         return students;
     }
 

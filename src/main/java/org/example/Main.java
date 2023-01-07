@@ -1,17 +1,16 @@
 package org.example;
 
-import comparator.ComparatorUtility;
 import comparator.UniversityComparator;
-import comparator.enums.StudentComparatorsEnum;
 import comparator.StudentComparator;
-import comparator.enums.UniversityComparatorsEnum;
 import models.Statistics;
-import models.Student;
-import models.University;
-import profiles.StudyProfile;
-
+import output.Json;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 import java.util.Scanner;
+import java.util.logging.*;
+import static java.util.logging.Level.INFO;
 
 import static org.example.ReadingXLSX.students;
 import static org.example.ReadingXLSX.universities;
@@ -26,40 +25,21 @@ public class Main {
                 "Please, follow the next instructions.");
         System.out.println("");*/
 
+        Logger log = Logger.getLogger(Main.class.getName());
+        try {
+            LogManager.getLogManager().readConfiguration(Main.class.getResourceAsStream("/logging.properties"));
+            log.info("The application started.");
+            log.info("Log file created.");
+        } catch (IOException e) {
+            System.err.println("Error in reading logging properties.");
+        }
         ReadingXLSX.readXlsx("src/main/resources/universityInfo.xlsx");
-        StudentComparator studentComparator = ComparatorUtility.studentComparator(StudentComparatorsEnum.STUDENT_AVG_EXAM_SCORE);
-        students.sort(studentComparator);
+        Json.createJson(students, universities);
 
         ArrayList<Statistics> statisticsArrayList = StatisticsUtil.calculateStatistics(students, universities);
         WriterXLSX.writeToExcel(statisticsArrayList,"src/main/resources/universityResults.xlsx");
+        log.info("The application successfully finished.");
 
-        //part for JSON
-        /*
-        ReadingXLSX.readXlsx("src/main/resources/universityInfo.xlsx");
-        students.sort(studentComparator);
-        String studentSerializedJson = JsonUtil.studentListSerialize(students);
-        System.out.println(studentSerializedJson);
-        ArrayList<Student> studentListFromJson = JsonUtil.studentListDeserialize(studentSerializedJson);
-        System.out.println(studentListFromJson.size() == students.size());
-        students.forEach(student -> {
-            String studentSerialized = JsonUtil.studentSerialize(student);
-            System.out.println(studentSerialized);
-            Student studentDeserialize = JsonUtil.studentDeserialize(studentSerialized);
-            System.out.println(studentDeserialize);
-        });
-        UniversityComparator universityComparator = ComparatorUtility.universityComparator(UniversityComparatorsEnum.UNIVERSITY_YEAR_OF_FOUNDATION);
-        universities.sort(universityComparator);
-        String universitySerializedJson = JsonUtil.universityListSerialize(universities);
-        System.out.println(universitySerializedJson);
-        ArrayList<University> universityListFromJson = JsonUtil.universityListDeserialize(universitySerializedJson);
-        System.out.println(universityListFromJson.size() == universities.size());
-        universities.forEach(university -> {
-            String universitySerialized = JsonUtil.universitySerialize(university);
-            System.out.println(universitySerialized);
-            University universityDeserialized = JsonUtil.universityDeserialize(universitySerialized);
-            System.out.println(universityDeserialized);
-        });
-        */
         //MainMenu();
     }
 
@@ -71,7 +51,7 @@ public class Main {
         System.out.print("Your option is: ");
         while (userChoice != "999") {
             userChoice = scan.next();
-            switch (userChoice) {
+            /*switch (userChoice) {
                 case "1" -> {
                     System.out.println("You selected University base.");
                     ReadingXLSX.readXlsx("src/main/resources/universityInfo.xlsx");
@@ -88,7 +68,7 @@ public class Main {
                 default -> {
                     System.out.println("There is no such options. Please, check input.");
                 }
-            }
+            }*/
         }
         System.out.println("");
     }
@@ -108,7 +88,7 @@ public class Main {
         while (userChoice != "999") {
             System.out.print("Your option is: ");
             userChoice = scan.next();
-            switch (userChoice) {
+            /*switch (userChoice) {
                 case "0" -> {
                     universityComparator = ComparatorUtility.universityComparator(UniversityComparatorsEnum.CLEAR);
                     universities.stream()
@@ -154,7 +134,7 @@ public class Main {
                 case "000" -> MainMenu();
                 case "999" -> System.exit(0);
                 default -> System.out.println("There is no such options. Please, check input.");
-            }
+            }*/
             System.out.println("Do you want to proceed with University base?\n" +
                     "Press 1 to proceed, press 000 back in main menu");
             userChoice = scan.next();
@@ -184,7 +164,7 @@ public class Main {
         while (userChoice != "999") {
             System.out.print("Your option is: ");
             userChoice = scan.next();
-            switch (userChoice) {
+            /*switch (userChoice) {
                 case "0" -> {
                     studentComparator = ComparatorUtility.studentComparator(StudentComparatorsEnum.CLEAR);
                     students.stream()
@@ -224,7 +204,7 @@ public class Main {
                 case "000" -> MainMenu();
                 case "999" -> System.exit(0);
                 default -> System.out.println("There is no such options. Please, check input.");
-            }
+            }*/
             System.out.println("Do you want to proceed with University base?\n" +
                     "Press 1 to proceed, press 000 back in main menu");
             userChoice = scan.next();

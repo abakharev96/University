@@ -9,11 +9,15 @@ import profiles.StudyProfile;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
 public class StatisticsUtil {
+    private static final Logger log = Logger.getLogger(StatisticsUtil.class.getName());
     private StatisticsUtil() {}
     public static ArrayList<Statistics> calculateStatistics(ArrayList<Student> students, ArrayList<University> universities){
+        log.log(Level.ALL,"Trying to calculate statistics...");
         ArrayList<Statistics> statisticsArrayList = new ArrayList<>();
         Set<String> universitySet = universities.stream()
                 .map(University::getFullName)
@@ -37,7 +41,7 @@ public class StatisticsUtil {
             statistics.setAvgExamScoreByProfile(calculateAvgExamScoreByProfile(universities, students,
                     statistics.getMainProfile()));
         });
-
+        log.log(Level.INFO, "Statistics was calculated successfully");
         return statisticsArrayList;
     }
 

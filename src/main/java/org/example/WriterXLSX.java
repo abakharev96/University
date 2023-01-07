@@ -14,13 +14,16 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import static org.example.ReadingXLSX.students;
 import static org.example.ReadingXLSX.universities;
 
 public class WriterXLSX {
+    private static final Logger log = Logger.getLogger(WriterXLSX.class.getName());
     public static void writeToExcel(ArrayList<Statistics> statistics, String URL){
-
+        log.log(Level.ALL, "Trying to write data in excel file...");
         int rowNumber = 0;
         Workbook workbook = new XSSFWorkbook();
         Sheet statisticSheet = workbook.createSheet("Statistic university");
@@ -31,8 +34,10 @@ public class WriterXLSX {
 
         try (FileOutputStream fos = new FileOutputStream(URL)) {
             workbook.write(fos);
+            log.log(Level.INFO, "Writing in excel file was successful");
             //System.out.println("The excel file was added successfully");
         } catch (IOException e) {
+            log.log(Level.SEVERE, "Error in writing in excel file", e);
             throw new RuntimeException(e);
         }
     }
